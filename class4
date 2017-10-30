@@ -38,10 +38,10 @@
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="me.html">About me</a></li>
-            <li class="active"><a href="#">Class1</a></li>
+            <li><a href="class1.html">Class1</a></li>
             <li><a href="class2.html">Class2</a></li>
             <li><a href="class3.html">Class3</a></li>
-            <li><a href="class4.html">Class4</a></li>
+            <li class="active"><a href="#">Class4</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -51,16 +51,16 @@
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1>Building A Documentation Website</h1>
-        <p>Making a website for this class using html.</p>
-        <img src="屏幕截图(26).png"  height=500>
-        <p>Bootstrap comes from Twitter, it's a very popular framework.</p>
-        <img src="屏幕截图(27).png"  height=500>
-        <p>Using sublime to make html.</p>
-        <img src="屏幕截图(25).png"  height=500>
-        <img src="屏幕截图(24).png"  height=500>
-        <p>Here is the website.</p>
-        <img src="屏幕截图(28).png"  height=500>
+        <h1>3D Scan</h1>
+        <p>Still Ein-scan to scan the sword of model.</p>
+        <p>Using XYZware to print.</p>        
+        <img src="屏幕截图(35).png"  height=500>
+        <p>But the scan result is not good.Maybe we can assume that it's the model of a postwar sword :)</p>
+        <img src="IMG_20171031_003844.jpg"  height=500>
+        <img src="IMG_20171031_003856.jpg"  height=500>
+        <p>Using Skanect to scan the portrait of myself.</p>
+        <img src="屏幕截图(36).png"  height=500>
+        <p>But I chose wrong height and the product looks terrible. So I didn't take photo of it.</p>
       </div>
     </div> <!-- /container -->
 
