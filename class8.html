@@ -76,7 +76,47 @@
         <img src="D$)56V{]O[H1Z_76%6X`]17.png"  height="500">
         <p>here is the final product</p>
         <img src="1513022471962.jpg"   height="500">
-
+        <p>here is the arduino code</p>
+        <div><pre>#include<Stepper.h>
+        const int stepsPerRevolution = 500;
+        int sensor= A0;
+        int val = 0;
+        int data = 0;
+        int mark = 0;   
+        // 初始化步进电机要使用的Arduino的引脚编号
+        Stepper myStepper(stepsPerRevolution, 8, 9, 10, 11);
+ 
+        void setup()
+        {
+                // 设置转速，单位r/min
+                myStepper.setSpeed(30);
+ 
+                // 初始化串口
+                Serial.begin(9600);
+        }
+ 
+        void loop()
+        {
+                val = analogRead(sensor);
+                if(val >150 and mark == 1){
+                // 顺时针一次旋转
+                Serial.println("counterclockwise");
+                myStepper.step(-stepsPerRevolution);
+                mark = 0;
+                delay(300);
+                }
+                if(val <150 and mark == 0){
+                // 逆时针一次旋转
+                Serial.println("clockwise");
+                myStepper.step(stepsPerRevolution);
+                mark = 1;
+                delay(300);
+                }
+                data = val;
+                Serial.println(data);
+                delay(300);
+        }
+        </pre>
 
 
         
